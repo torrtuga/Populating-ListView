@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
 
         String[] androidVersions = {"Cupcake","Donut","Eclair","Froyo","GingerBread",
         "Honeycomb","IceCreamSandwich","JellyBean","KitKat","Lollipop","Marshmallow",
-        "Nougat"};
+        "Nougat"};  // String array containing the items to be filled
 
-        ListAdapter myAdapter  = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,
+        ListAdapter myAdapter  = new ArrayAdapter<String>(this,R.layout.row_layout,
                 androidVersions);
         ListView myListView = (ListView) findViewById(R.id.list_item);
         myListView.setAdapter(myAdapter);
